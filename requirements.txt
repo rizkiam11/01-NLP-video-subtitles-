@@ -1,0 +1,5 @@
+openai-whisper
+moviepy
+
+
+# pip install -r requirements.txt
