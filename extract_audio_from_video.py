@@ -1,10 +1,10 @@
 from moviepy.editor import VideoFileClip
 import os
 
-
 audio_dir = "./audio/"
 
 def gen_wav_file(vid_file):
+    print("Audio extraction started!")
     os.makedirs(audio_dir, 
                 exist_ok=True)
     output_audio_file = os.path.join(audio_dir, 
@@ -24,5 +24,3 @@ def gen_wav_file(vid_file):
 
     print("Audio extraction successful!")
 
-vid_file = os.path.abspath("./video/How to stay calm when you know you'll be stressed _ Daniel Levitin.mp4")
-gen_wav_file(vid_file)
