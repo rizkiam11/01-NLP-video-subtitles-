@@ -33,10 +33,10 @@ To process audio files, the Whisper model relies on `ffmpeg`. You need to instal
 
 - Clone the repository:
   ```bash
-  git clone https://github.com/yourusername/your-repo-name.git
+  git clone https://github.com/rizkiam11/01-NLP-video-subtitles-.git
   ```
   ```
-  cd your-repo-name
+  cd 01-NLP-video-subtitles-
   ```
 - Create and activate a virtual environment (optional but recommended):
 ```
