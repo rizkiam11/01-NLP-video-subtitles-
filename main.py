@@ -65,4 +65,8 @@ else:
                                                                                                                                                                                                                                   
 if result is not None:
     print("Subtitle creation started")
+<<<<<<< HEAD
     gen_subtitle_file(result,video_file_path)
+=======
+    gen_subtitle_file(result,video_file_path)
+>>>>>>> e496267cc3573bce49b7ce33f0dc9faa53c766ed
