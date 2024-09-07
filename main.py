@@ -6,12 +6,6 @@ import os
 import time
 import librosa
 
-# def seconds_to_minutes_and_seconds(seconds):
-#     minutes, seconds = divmod(seconds, 60)
-#     return int(minutes), int(seconds)
-
-# seconds_to_minutes_and_seconds(librosa.get_duration(path = audio))
-
 # ******to view all available models.
 # print(whisper.available_models())
 
@@ -50,12 +44,9 @@ else:
     audio_duration = librosa.get_duration(path = audio_file_path)
     audio_minutes, audio_seconds = divmod(audio_duration, 60)
     print("transcribe started")
-    # Start time
     start_time = time.time()
     result = model.transcribe(audio_file_path)
-    # End time
     end_time = time.time()
-    # Calculate the execution time
     execution_time = end_time - start_time
     minutes, seconds = divmod(execution_time, 60)
     print(f"transcribe succesfully {int(audio_minutes)}:{int(audio_seconds)} audio file in {int(minutes)}:{int(seconds)}")
@@ -65,8 +56,4 @@ else:
                                                                                                                                                                                                                                   
 if result is not None:
     print("Subtitle creation started")
-<<<<<<< HEAD
     gen_subtitle_file(result,video_file_path)
-=======
-    gen_subtitle_file(result,video_file_path)
->>>>>>> e496267cc3573bce49b7ce33f0dc9faa53c766ed
