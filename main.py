@@ -49,4 +49,4 @@ else:
                                                                                                                                                                                                                                   
 if result is not None:
     print("Subtitle creation started")
-    gen_subtitle_file(result,video_file)
+    gen_subtitle_file(result,video_file_path)
