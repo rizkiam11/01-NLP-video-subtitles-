@@ -59,3 +59,11 @@ Make sure you have an audio or video file ready for processing.
 python main.py
 ```
 3. `subtitle` folder will have the output file with `.srt`. 
+
+### 3. Performance
+i have tested it on my only CPU based enviornemnt having 
+```Processor: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz (4 CPUs), ~2.0GHz```  and   ```Memory: 4096MB RAM```:
+
+| `audio duraion` | `Conversion time` | `Whisper model` |
+|-----------------|-------------------|-----------------|
+|    __12:20__    |       __4:10__    |     __Base__    |
